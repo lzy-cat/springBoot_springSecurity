@@ -61,7 +61,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 /*
                  * 默认允许所有路径所有人都可以访问，确保静态资源的正常访问。
-                 * 后面再通过方法注解的方式来控制权限。
+                 * 后面再通过方法注解的方式来控制权限。在security文件下的isAdmin、isEditor。。。文件
                  */
                 .authorizeRequests().anyRequest().permitAll()
                 .and()
